@@ -1,2 +1,2 @@
 # PythonExploration
-Python 精进之旅
+Python 探索之旅
