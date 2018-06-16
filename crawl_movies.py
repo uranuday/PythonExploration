@@ -22,7 +22,8 @@ def parse_and_asve(url):
         try:
             movie_name = info.xpath('./div[2]/p[1]/text()')[0]
             movie_img = info.xpath('./div[1]//img/@data-original')[0]
-            movie_url = 'http://www.ttkyy.net' + info.xpath('@href')[0]
+            # movie_url = 'http://www.ttkyy.net' + info.xpath('@href')[0]
+            movie_url = 'http://ttkyy.wx.smsjyy.com' + '/p' + info.xpath('@href')[0][2:-5] + '-0-0.html'
         except:
             print("")
         time.sleep(1)
